@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d61f27f8-6307-47d2-b037-ca5ac3868445" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/minecraft-roguelike.iws" beforeDir="false" afterPath="$PROJECT_DIR$/minecraft-roguelike.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonDebug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonDebug.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/Roguelike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/Roguelike.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
