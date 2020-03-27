@@ -9,13 +9,21 @@ import io.github.opencubicchunks.cubicchunks.api.worldgen.populator.CubePopulato
 import io.github.opencubicchunks.cubicchunks.api.worldgen.populator.ICubicPopulator;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraft.world.gen.IChunkGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.util.Random;
 
-public class DungeonGenerator implements ICubicPopulator {
+public class DungeonGenerator implements ICubicPopulator, IWorldGenerator {
 
-
+	@Override
+	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
+		IWorldEditor editor = new WorldEditor(world);
+		IDungeon dungeon = new Dungeon(editor);
+		dungeon.spawnInChunk(world, random, chunkX, 0, chunkZ);
+	}
 
 	// Use Deprecated CubePopulatorEvent because Terra121 uses it.
 	@SubscribeEvent

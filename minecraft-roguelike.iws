@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d61f27f8-6307-47d2-b037-ca5ac3868445" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonDebug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minecraft-roguelike.iws" beforeDir="false" afterPath="$PROJECT_DIR$/minecraft-roguelike.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonDebug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonDebug.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/EntityJoinWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/EntityJoinWorld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/Roguelike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/Roguelike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/dungeon/Dungeon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/dungeon/Dungeon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/dungeon/DungeonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/dungeon/DungeonGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/dungeon/IDungeon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/dungeon/IDungeon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/dungeon/tasks/DungeonTaskTunnels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/dungeon/tasks/DungeonTaskTunnels.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -508,38 +502,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585241617123" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1585272047229">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1585273655160">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585272047229" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1585272047229">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655160" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1585273655160">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585272047229" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1585272047229">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655160" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1585273655160">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585272047229" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1585272047229">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655160" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1585273655160">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585272047229" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1585272047071">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655160" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1585273655161">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585272047071" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1585272047071">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655161" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1585273655161">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585272047071" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1585272047071">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655161" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1585273655161">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585272047071" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1585272047071">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655161" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1585273655161">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585272047071" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655161" />
     <state x="461" y="167" key="SettingsEditor" timestamp="1585199681021">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

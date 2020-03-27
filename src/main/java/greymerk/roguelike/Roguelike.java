@@ -33,8 +33,8 @@ public class Roguelike {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		// TODO
-		// GameRegistry.registerWorldGenerator(worldGen, 0);
+		// TODO: This is not tested yet.
+		GameRegistry.registerWorldGenerator(worldGen, 0);
 
 		MinecraftForge.EVENT_BUS.register(worldGen);
 		CubeGeneratorsRegistry.register(worldGen, 0);

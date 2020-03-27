@@ -1,7 +1,7 @@
 # TODO Tasks
 
-Fix collisions and 256 build limit on Singleplayer (fixed when 
+* Fix collisions and 256 build limit on Singleplayer (fixed when 
 reloading world).
-Test if Village chunks really exists on CC (I think they do, but we 
+* Test if Village chunks really exists on CC (I think they do, but we 
 need to ensure).
-Recreate IWorldGenerator implementation for normal worlds.
+* (UNTESTED) Recreate IWorldGenerator implementation for normal worlds.
