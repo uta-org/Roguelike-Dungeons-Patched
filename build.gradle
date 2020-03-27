@@ -2,11 +2,22 @@ buildscript {
     repositories {
         jcenter()
         maven { url = "http://files.minecraftforge.net/maven" }
+        maven { url = 'https://repo.spongepowered.org/maven' }
+        maven { url = 'https://plugins.gradle.org/m2' }  
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
+        // classpath 'org.spongepowered:noise:2.0.0-SNAPSHOT'
     }
 }
+
+/*
+plugins {
+    id 'org.spongepowered.plugin' version '0.9.0'
+}
+*/
+
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 version = "1.12.2-1.8.0"
@@ -18,16 +29,43 @@ compileJava {
     sourceCompatibility = targetCompatibility = '1.8'
 }
 
+// 14.23.5.2847
+// 14.23.5.2768
 minecraft {
-    version = "1.12.2-14.23.5.2768"
+    version = "1.12.2-14.23.5.2847"
     runDir = "run"
 	mappings = "snapshot_20171003"
 	makeObfSourceJar = false
 }
 
-dependencies {
-	testCompile "junit:junit:4.11"
+repositories {
+    // mavenCentral()
+    maven { url = "https://oss.sonatype.org/content/repositories/public/" }
+    maven { url = 'https://repo.spongepowered.org/maven' }
+    // Note: sponge repository needs to be the second one because flow-noise is both in sponge and sonatype repository
+    // but sponge has older one, and we need the newer one from sonatype
+    // currently gradle seems to resolve dependencies from repositories in the order they are defined here 
+    maven { url = "https://minecraft.curseforge.com/api/maven/" }
+    maven { url = "https://repo.elytradev.com" } // jankson snapshot 
 }
+
+dependencies {
+    testCompile "junit:junit:4.11"
+
+    // compile 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
+    compile("org.spongepowered:mixin:0.8.1-SNAPSHOT")
+    {
+        transitive = false
+    }
+
+	
+    // deobfCompile 'io.github.opencubicchunks:cubicchunks:1.12.2-0.0-SNAPSHOT'
+    deobfCompile("io.github.opencubicchunks:cubicchunks-api:1.12.2-0.0-SNAPSHOT")
+    {
+        transitive = false
+    }
+}
+
 
 processResources
 {

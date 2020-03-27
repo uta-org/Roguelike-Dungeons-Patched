@@ -16,10 +16,11 @@ import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class EntityJoinWorld {
-	
+
+
 	@SubscribeEvent
 	public void OnEntityJoinWorld(EntityJoinWorldEvent event) {
-		
+
 		World world = event.getWorld();
 		if(world.isRemote) return;
 		

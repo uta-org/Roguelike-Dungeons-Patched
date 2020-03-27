@@ -1,6 +1,7 @@
 package greymerk.roguelike;
 
 import greymerk.roguelike.command.CommandRoguelike;
+import io.github.opencubicchunks.cubicchunks.api.worldgen.CubeGeneratorsRegistry;
 import net.minecraft.command.ICommandManager;
 import net.minecraft.command.ServerCommandManager;
 import net.minecraft.server.MinecraftServer;
@@ -32,19 +33,25 @@ public class Roguelike {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		GameRegistry.registerWorldGenerator(worldGen, 0);
+		// TODO
+		// GameRegistry.registerWorldGenerator(worldGen, 0);
+
+		MinecraftForge.EVENT_BUS.register(worldGen);
+		CubeGeneratorsRegistry.register(worldGen, 0);
 	}
 	
 	@EventHandler
 	public void modInit(FMLInitializationEvent event) {
-		MinecraftForge.EVENT_BUS.register(new EntityJoinWorld()); 
+		MinecraftForge.EVENT_BUS.register(new EntityJoinWorld());
 	}
 	
 	@EventHandler
 	public void serverStart(FMLServerStartingEvent event){
+
 		MinecraftServer server = event.getServer();
 		ICommandManager command = server.getCommandManager();
 		ServerCommandManager serverCommand = ((ServerCommandManager) command);
 		serverCommand.registerCommand(new CommandRoguelike());
+
 	}
 }

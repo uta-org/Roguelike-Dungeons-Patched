@@ -10,6 +10,11 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Random;
 
+import com.sun.istack.internal.NotNull;
+import greymerk.roguelike.DungeonDebug;
+import io.github.opencubicchunks.cubicchunks.api.world.ICubicWorld;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.world.World;
 import org.apache.commons.io.FilenameUtils;
 
 import com.google.common.base.Charsets;
@@ -33,6 +38,8 @@ import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeDictionary.Type;
 
 public class Dungeon implements IDungeon{
+
+
 	public static final int VERTICAL_SPACING = 10;
 	public static final int TOPLEVEL = 50;
 	
@@ -44,6 +51,13 @@ public class Dungeon implements IDungeon{
 	private List<IDungeonLevel> levels;
 
 	private IWorldEditor editor;
+
+	@NotNull
+	private World world;
+
+	private boolean isCubicWorld;
+
+	private static boolean isSpawnedOnce, isGenerating;
 	
 	static{
 		try{
@@ -92,14 +106,25 @@ public class Dungeon implements IDungeon{
 		this.editor = editor;
 		this.levels = new ArrayList<IDungeonLevel>();
 	}
+
+	private void checkForCubicWorld() {
+		try {
+			ICubicWorld cubicWorld = (ICubicWorld)world;
+			isCubicWorld = cubicWorld != null;
+		} catch(Exception ex) {
+			isCubicWorld = false;
+		}
+	}
 	
-	public void generateNear(Random rand, int x, int z){
-		if(Dungeon.settingsResolver == null) return;
+	public boolean generateNear(Random rand, int x, int y, int z){
+		if(Dungeon.settingsResolver == null) return false;
 		
 		int attempts = 50;
-		
-		for(int i = 0;i < attempts;i++){
+
+		for(int i = 0; i < attempts; i++){
 			Coord location = getNearbyCoord(rand, x, z, 40, 100);
+			if(isCubicWorld)
+				location.add(Cardinal.UP, y);
 			
 			if(!validLocation(rand, location)) continue;
 			
@@ -109,20 +134,21 @@ public class Dungeon implements IDungeon{
 				setting = Dungeon.settingsResolver.getSettings(editor, rand, location);	
 			} catch(Exception e){
 				e.printStackTrace();
-				return;
+				return false;
 			}
-			 
 			
-			if(setting == null) return;
+			if(setting == null) return false;
 			
 			generate(setting, location);
-			
-			return;
+			return true;
 		}
+
+		if(DungeonDebug.debug) System.out.println("Surpassed maximum ("+attempts+") attempts!");
+		return false;
 	}
 	
 	public void generate(ISettings settings, Coord pos){
-		this.origin = new Coord(pos.getX(), Dungeon.TOPLEVEL, pos.getZ());
+		this.origin = new Coord(pos.getX(), pos.getY() > 0 ? pos.getY() : Dungeon.TOPLEVEL, pos.getZ());
 		DungeonGenerator.generate(editor, this, settings, DungeonTaskRegistry.getTaskRegistry());	
 	}
 	
@@ -136,16 +162,24 @@ public class Dungeon implements IDungeon{
 		List<Integer> bl = new ArrayList<Integer>();
 		bl.addAll(RogueConfig.getIntList(RogueConfig.DIMENSIONBL));
 		if(!SpawnCriteria.isValidDimension(dim, wl, bl)) return false;
-		
-		if(!isVillageChunk(editor, chunkX, chunkZ)) return false;
-		
-		double spawnChance = RogueConfig.getDouble(RogueConfig.SPAWNCHANCE);
+
+		boolean spawn = !isSpawnedOnce && DungeonDebug.debug;
+		if(!isVillageChunk(editor, chunkX, chunkZ) && !spawn) return false;
+
+		//if(DungeonDebug.debug)
+		//	System.out.println("Found village chunk!");
+
+		// I added 5% to test it without travelling too much
+		double spawnChance = RogueConfig.getDouble(RogueConfig.SPAWNCHANCE); // * 0.05;
 		Random rand = new Random(Objects.hash(chunkX, chunkZ, 31));
-		
-		return rand.nextFloat() < spawnChance;
-		
+
+		float f = rand.nextFloat();
+		// System.out.println(f);
+
+		return f < spawnChance;
 	}
-	
+
+	// This approach doesn't conflicts with T121, so we can re-add it
 	public static boolean isVillageChunk(IWorldEditor editor, int chunkX, int chunkZ){
 		int frequency = RogueConfig.getInt(RogueConfig.SPAWNFREQUENCY);
 		int min = 8 * frequency / 10;
@@ -171,12 +205,31 @@ public class Dungeon implements IDungeon{
 		return chunkX == m && chunkZ == n;
 	}
 	
-	public void spawnInChunk(Random rand, int chunkX, int chunkZ) {
-		if(Dungeon.canSpawnInChunk(chunkX, chunkZ, editor)){
+	public void spawnInChunk(World world, Random rand, int chunkX, int y, int chunkZ) {
+		if(this.world == null) {
+			this.world = world;
+			checkForCubicWorld();
+		}
+
+		boolean isDebug = DungeonDebug.debug;
+
+		// flag created to test
+		boolean canSpawnInDebugMode = isDebug && y >= 25;
+		if(Dungeon.canSpawnInChunk(chunkX, chunkZ, editor) && canSpawnInDebugMode){
 			int x = chunkX * 16 + 4;
 			int z = chunkZ * 16 + 4;
+
+			y = y * 16;
+
+			if(isGenerating)
+				return;
+
+			if(isDebug) {
+				System.out.println("Attempting to generate dungeon at chunk ("+x+", "+z+"), y = "+y);
+			}
 			
-			generateNear(rand, x, z);
+			isGenerating = generateNear(rand, x, y, z);
+			isSpawnedOnce = isGenerating;
 		}
 	}
 	
@@ -209,10 +262,11 @@ public class Dungeon implements IDungeon{
 			double strongholdDistance = column.distance(stronghold);
 			if(strongholdDistance < 300) return false;
 		}
-				
-		int upperLimit = RogueConfig.getInt(RogueConfig.UPPERLIMIT);
-		int lowerLimit = RogueConfig.getInt(RogueConfig.LOWERLIMIT);
-		
+
+		int y = column.getY();
+		int upperLimit = isCubicWorld ? y + 16 : RogueConfig.getInt(RogueConfig.UPPERLIMIT);
+		int lowerLimit = isCubicWorld ? y : RogueConfig.getInt(RogueConfig.LOWERLIMIT);
+
 		Coord cursor = new Coord(column.getX(), upperLimit, column.getZ());
 		
 		if(!editor.isAirBlock(cursor)){
@@ -264,7 +318,7 @@ public class Dungeon implements IDungeon{
 		int xOffset = (int) (Math.cos(angle) * distance);
 		int zOffset = (int) (Math.sin(angle) * distance);
 		
-		Coord nearby = new Coord(x + xOffset, 0, z + zOffset);		
+		Coord nearby = new Coord(x + xOffset, 0, z + zOffset);
 		return nearby;
 	}
 	
