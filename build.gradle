@@ -7,16 +7,9 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
-        classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
-        // classpath 'org.spongepowered:noise:2.0.0-SNAPSHOT'
+        classpath 'org.spongepowered:mixingradle:0.5-SNAPSHOT'
     }
 }
-
-/*
-plugins {
-    id 'org.spongepowered.plugin' version '0.9.0'
-}
-*/
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 
@@ -52,14 +45,11 @@ repositories {
 dependencies {
     testCompile "junit:junit:4.11"
 
-    // compile 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
     compile("org.spongepowered:mixin:0.8.1-SNAPSHOT")
     {
         transitive = false
     }
 
-	
-    // deobfCompile 'io.github.opencubicchunks:cubicchunks:1.12.2-0.0-SNAPSHOT'
     deobfCompile("io.github.opencubicchunks:cubicchunks-api:1.12.2-0.0-SNAPSHOT")
     {
         transitive = false

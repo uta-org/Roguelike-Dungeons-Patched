@@ -1,552 +1,650 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d61f27f8-6307-47d2-b037-ca5ac3868445" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greymerk/roguelike/DungeonGenerator.java" afterDir="false" />
+    <list comment="" default="true" id="d61f27f8-6307-47d2-b037-ca5ac3868445" name="Default Changelist">
+      <change afterDir="false" afterPath="$PROJECT_DIR$/build.gradle" beforeDir="false" beforePath="$PROJECT_DIR$/build.gradle"/>
+      <change afterDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties"/>
+      <change beforeDir="false" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties.bak"/>
+      <change afterDir="false" afterPath="$PROJECT_DIR$/minecraft-roguelike.iws" beforeDir="false" beforePath="$PROJECT_DIR$/minecraft-roguelike.iws"/>
     </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
+    <option name="SHOW_DIALOG" value="false"/>
+    <option name="HIGHLIGHT_CONFLICTS" value="true"/>
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false"/>
+    <option name="LAST_RESOLUTION" value="IGNORE"/>
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-    <option name="REVERSE_PATCH" value="false" />
+    <option name="PATCH_PATH" value=""/>
+    <option name="REVERSE_PATCH" value="false"/>
   </component>
   <component name="DebuggerManager">
     <breakpoint_any converted="true">
       <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="NOTIFY_CAUGHT" value="true"/>
+        <option name="NOTIFY_UNCAUGHT" value="true"/>
+        <option name="ENABLED" value="false"/>
+        <option name="LOG_ENABLED" value="false"/>
+        <option name="LOG_EXPRESSION_ENABLED" value="false"/>
+        <option name="SUSPEND_POLICY" value="SuspendAll"/>
+        <option name="COUNT_FILTER_ENABLED" value="false"/>
+        <option name="COUNT_FILTER" value="0"/>
+        <option name="CONDITION_ENABLED" value="false"/>
+        <option name="CLASS_FILTERS_ENABLED" value="false"/>
+        <option name="INSTANCE_FILTERS_ENABLED" value="false"/>
+        <option name="CONDITION" value=""/>
+        <option name="LOG_MESSAGE" value=""/>
       </breakpoint>
       <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="NOTIFY_CAUGHT" value="true"/>
+        <option name="NOTIFY_UNCAUGHT" value="true"/>
+        <option name="ENABLED" value="false"/>
+        <option name="LOG_ENABLED" value="false"/>
+        <option name="LOG_EXPRESSION_ENABLED" value="false"/>
+        <option name="SUSPEND_POLICY" value="SuspendAll"/>
+        <option name="COUNT_FILTER_ENABLED" value="false"/>
+        <option name="COUNT_FILTER" value="0"/>
+        <option name="CONDITION_ENABLED" value="false"/>
+        <option name="CLASS_FILTERS_ENABLED" value="false"/>
+        <option name="INSTANCE_FILTERS_ENABLED" value="false"/>
+        <option name="CONDITION" value=""/>
+        <option name="LOG_MESSAGE" value=""/>
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
-    <ui_properties converted="true" />
+    <breakpoint_rules converted="true"/>
+    <ui_properties converted="true"/>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Class"/>
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$"/>
   </component>
   <component name="ModuleEditorState">
-    <option name="LAST_EDITED_MODULE_NAME" />
-    <option name="LAST_EDITED_TAB_NAME" />
+    <option name="LAST_EDITED_MODULE_NAME"/>
+    <option name="LAST_EDITED_TAB_NAME"/>
   </component>
-  <component name="ProjectId" id="1ZeOf8LEbnPWu4Xq3kzQwIQCMP6" />
+  <component id="1ZeOf8LEbnPWu4Xq3kzQwIQCMP6" name="ProjectId"/>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
-      <profile-state />
+      <profile-state/>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true"/>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="0"/>
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true"/>
+    <option name="showExcludedFiles" value="true"/>
+    <option name="showLibraryContents" value="true"/>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="JavaClassFindUsagesOptions.isSearchForTextOccurrences" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="GoToClass.includeLibraries" value="false"/>
+    <property name="GoToClass.toSaveIncludeLibraries" value="false"/>
+    <property name="GoToFile.includeJavaFiles" value="false"/>
+    <property name="JavaClassFindUsagesOptions.isSearchForTextOccurrences" value="false"/>
+    <property name="MemberChooser.copyJavadoc" value="false"/>
+    <property name="MemberChooser.showClasses" value="true"/>
+    <property name="MemberChooser.sorted" value="false"/>
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true"/>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../atomicstrykers-minecraft-mods/Ruins"/>
+    <property name="project.structure.last.edited" value="Modules"/>
+    <property name="project.structure.proportion" value="0.0"/>
+    <property name="project.structure.side.proportion" value="0.0"/>
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager"/>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
     <configuration default="true" factoryName="Applet" type="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name=""/>
+      <option name="MAIN_CLASS_NAME"/>
+      <option name="HTML_FILE_NAME"/>
+      <option name="HTML_USED" value="false"/>
+      <option name="WIDTH" value="400"/>
+      <option name="HEIGHT" value="300"/>
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy"/>
+      <option name="VM_PARAMETERS"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH"/>
       <method>
-        <option enabled="false" name="BuildArtifacts" />
-        <option enabled="true" name="Make" />
+        <option enabled="false" name="BuildArtifacts"/>
+        <option enabled="true" name="Make"/>
       </method>
     </configuration>
     <configuration default="true" name="&lt;template&gt;" selected="false" type="WebApp">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration name="Minecraft Client" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <module name="minecraft-roguelike" />
-      <option name="PROGRAM_PARAMETERS" value="--username z3nth10n --uuid 6731cfaf853b4797be1e4db67d52fddb --width 1280 --height 720" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+    <configuration factoryName="Application" name="Minecraft Client" type="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <module name="minecraft-roguelike"/>
+      <option name="PROGRAM_PARAMETERS" value="--username z3nth10n --uuid 6731cfaf853b4797be1e4db67d52fddb --width 1280 --height 720"/>
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option enabled="true" name="Make"/>
       </method>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
-    <configuration name="Minecraft Server" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <module name="minecraft-roguelike_main" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+    <configuration factoryName="Application" name="Minecraft Server" type="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <module name="minecraft-roguelike_main"/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option enabled="true" name="Make"/>
       </method>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
     <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
-      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="minecraft-roguelike_main" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../minecraft-roguelike\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration default="true" factoryName="Application" type="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$"/>
       <method v="2">
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
+        <option enabled="false" name="BuildArtifacts"/>
+        <option enabled="true" name="Make"/>
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration default="true" factoryName="JUnit" type="JUnit">
+      <option name="TEST_OBJECT" value="class"/>
+      <option name="VM_PARAMETERS"/>
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$"/>
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
+        <value defaultName="moduleWithDependencies"/>
       </option>
       <method v="2">
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
+        <option enabled="false" name="BuildArtifacts"/>
+        <option enabled="true" name="Make"/>
       </method>
     </configuration>
     <configuration default="true" type="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <option name="AUTO_RESTART" value="false" />
+      <option name="USE_SOCKET_TRANSPORT" value="true"/>
+      <option name="SERVER_MODE" value="false"/>
+      <option name="SHMEM_ADDRESS" value="javadebug"/>
+      <option name="HOST" value="localhost"/>
+      <option name="PORT" value="5005"/>
+      <option name="AUTO_RESTART" value="false"/>
       <method v="2">
-        <option name="BuildArtifacts" enabled="false" />
+        <option enabled="false" name="BuildArtifacts"/>
       </method>
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
+    </configuration>
+  <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStart"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true"/>
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer"/>
+      <option name="VM_PARAMETERS" value=""/>
+      <option name="PROGRAM_PARAMETERS" value=""/>
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$\run"/>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false"/>
+      <option name="ALTERNATIVE_JRE_PATH" value=""/>
+      <option name="ENABLE_SWING_INSPECTOR" value="false"/>
+      <option name="ENV_VARIABLES"/>
+      <option name="PASS_PARENT_ENVS" value="true"/>
+      <module name="minecraft-roguelike_main"/>
+      <RunnerSettings RunnerId="Run"/>
+      <ConfigurationWrapper RunnerId="Run"/>
     </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration/>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d61f27f8-6307-47d2-b037-ca5ac3868445" name="Default Changelist" comment="" />
+      <changelist comment="" id="d61f27f8-6307-47d2-b037-ca5ac3868445" name="Default Changelist"/>
       <created>1585196194821</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
+      <option name="number" value="Default"/>
+      <option name="presentableId" value="Default"/>
       <updated>1585196194821</updated>
     </task>
-    <servers />
+    <servers/>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true"/>
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true"/>
   </component>
   <component name="WindowStateProjectService">
-    <state x="677" y="183" key="#Minecraft_Client" timestamp="1585196734198">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state key="#Minecraft_Client" timestamp="1585196734198" x="677" y="183">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state x="677" y="183" key="#Minecraft_Client/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585196734198" />
-    <state x="552" y="183" key="#Project_Structure" timestamp="1585240494665">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state key="#Minecraft_Client/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585196734198" x="677" y="183"/>
+    <state key="#Project_Structure" timestamp="1585240494665" x="552" y="183">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state x="552" y="183" key="#Project_Structure/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585240494665" />
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585196840066">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state key="#Project_Structure/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585240494665" x="552" y="183"/>
+    <state key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585196840066" x="414" y="179">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585196840066" />
-    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1585241617123">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585196840066" x="414" y="179"/>
+    <state key="#com.intellij.ide.util.MemberChooser" timestamp="1585241617123" x="765" y="234">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585241617123" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1585273655160">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585241617123" x="765" y="234"/>
+    <state key="FileChooserDialogImpl" timestamp="1585276576867" x="740" y="279">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655160" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1585273655160">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state key="FileChooserDialogImpl/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585276576867" x="740" y="279"/>
+    <state height="352" key="GridCell.Tab.0.bottom" timestamp="1585276610715" width="1877">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655160" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1585273655160">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585276610715" width="1877"/>
+    <state height="352" key="GridCell.Tab.0.center" timestamp="1585276610714" width="1877">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655160" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1585273655160">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state height="352" key="GridCell.Tab.0.center/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585276610714" width="1877"/>
+    <state height="352" key="GridCell.Tab.0.left" timestamp="1585276610714" width="1877">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655160" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1585273655161">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state height="352" key="GridCell.Tab.0.left/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585276610714" width="1877"/>
+    <state height="352" key="GridCell.Tab.0.right" timestamp="1585276610715" width="1877">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655161" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1585273655161">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state height="352" key="GridCell.Tab.0.right/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585276610715" width="1877"/>
+    <state height="352" key="GridCell.Tab.1.bottom" timestamp="1585276610715" width="1877">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655161" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1585273655161">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585276610715" width="1877"/>
+    <state height="352" key="GridCell.Tab.1.center" timestamp="1585276610715" width="1877">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655161" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1585273655161">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state height="352" key="GridCell.Tab.1.center/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585276610715" width="1877"/>
+    <state height="352" key="GridCell.Tab.1.left" timestamp="1585276610715" width="1877">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585273655161" />
-    <state x="461" y="167" key="SettingsEditor" timestamp="1585199681021">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state height="352" key="GridCell.Tab.1.left/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585276610715" width="1877"/>
+    <state height="352" key="GridCell.Tab.1.right" timestamp="1585276610715" width="1877">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585199681021" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1585269280704">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state height="352" key="GridCell.Tab.1.right/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585276610715" width="1877"/>
+    <state key="SettingsEditor" timestamp="1585199681021" x="461" y="167">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585269280704" />
-    <state x="656" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1585199695699">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state key="SettingsEditor/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585199681021" x="461" y="167"/>
+    <state height="446" key="SwitcherDM" timestamp="1585269280704" width="498">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state x="656" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585199695699" />
-    <state x="656" y="123" width="607" height="804" key="find.popup" timestamp="1585259818738">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state height="446" key="SwitcherDM/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585269280704" width="498"/>
+    <state key="com.intellij.ide.util.TipDialog" timestamp="1585199695699" x="656" y="348">
+      <screen height="1050" width="1920" x="0" y="0"/>
     </state>
-    <state x="656" y="123" width="607" height="804" key="find.popup/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585259818738" />
+    <state key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585199695699" x="656" y="348"/>
+    <state height="804" key="find.popup" timestamp="1585259818738" width="607" x="656" y="123">
+      <screen height="1050" width="1920" x="0" y="0"/>
+    </state>
+    <state height="804" key="find.popup/0.0.1920.1050/1920.174.1600.870@0.0.1920.1050" timestamp="1585259818738" width="607" x="656" y="123"/>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -554,15 +652,15 @@
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2847/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2847-sources.jar!/net/minecraft/server/management/PlayerList.java</url>
           <line>627</line>
-          <log-expression expression="playerIn.attemptTeleport(3739019, 429, -214261)" language="JAVA" />
-          <option name="timeStamp" value="19" />
+          <log-expression expression="playerIn.attemptTeleport(3739019, 429, -214261)" language="JAVA"/>
+          <option name="timeStamp" value="19"/>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="editor.toString()" language="JAVA" />
-        <watch expression="level.getLayout().getTunnels().size()" language="JAVA" />
+        <watch expression="editor.toString()" language="JAVA"/>
+        <watch expression="level.getLayout().getTunnels().size()" language="JAVA"/>
       </configuration>
     </watches-manager>
   </component>

@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Random;
 
-import com.sun.istack.internal.NotNull;
+import javax.annotation.Nonnull;
 import greymerk.roguelike.DungeonDebug;
 import io.github.opencubicchunks.cubicchunks.api.world.ICubicWorld;
 import net.minecraft.entity.player.EntityPlayer;
@@ -52,7 +52,7 @@ public class Dungeon implements IDungeon{
 
 	private IWorldEditor editor;
 
-	@NotNull
+	@Nonnull
 	private World world;
 
 	private boolean isCubicWorld;
