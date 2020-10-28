@@ -11,7 +11,7 @@ import net.minecraft.util.Tuple;
 public enum RogueConfig {
 
 	DONATURALSPAWN, SPAWNFREQUENCY, GENEROUS, MOBDROPS, DIMENSIONWL, DIMENSIONBL, PRECIOUSBLOCKS, LOOTING, 
-	UPPERLIMIT, LOWERLIMIT, ROGUESPAWNERS, ENCASE, FURNITURE, RANDOM, SPAWNBUILTIN, SPAWNCHANCE;
+	UPPERLIMIT, LOWERLIMIT, ROGUESPAWNERS, ENCASE, FURNITURE, RANDOM, SPAWNBUILTIN, SPAWNCHANCE, DEBUG;
 	
 	public static final String configDirName = "config/roguelike_dungeons";
 	public static final String configFileName = "roguelike.cfg";
@@ -36,6 +36,7 @@ public enum RogueConfig {
 		case FURNITURE: return "furniture";
 		case RANDOM: return "random";
 		case SPAWNBUILTIN: return "doBuiltinSpawn";
+		case DEBUG: return "debug";
 		default: return null;
 		}
 	}
@@ -61,6 +62,7 @@ public enum RogueConfig {
 		case FURNITURE: return new Tuple<String, Boolean>(getName(option), true);
 		case RANDOM: return new Tuple<String, Boolean>(getName(option), false);
 		case SPAWNBUILTIN: return new Tuple<String, Boolean>(getName(option), true);
+			case DEBUG: return new Tuple<>(getName(option), true);
 		default: return null;
 		}
 	}
@@ -82,6 +84,7 @@ public enum RogueConfig {
 		if(!instance.ContainsKey(getName(FURNITURE))) setBoolean(FURNITURE, (Boolean)getDefault(FURNITURE).getSecond());
 		if(!instance.ContainsKey(getName(RANDOM))) setBoolean(RANDOM, (Boolean)getDefault(RANDOM).getSecond());
 		if(!instance.ContainsKey(getName(SPAWNBUILTIN))) setBoolean(SPAWNBUILTIN, (Boolean)getDefault(SPAWNBUILTIN).getSecond());
+		if(!instance.ContainsKey(getName(DEBUG))) setBoolean(DEBUG, (Boolean)getDefault(DEBUG).getSecond());
 	}
 	
 	public static double getDouble(RogueConfig option){
