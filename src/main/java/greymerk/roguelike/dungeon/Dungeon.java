@@ -37,8 +37,9 @@ import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeDictionary.Type;
 
-public class Dungeon implements IDungeon{
+public class Dungeon implements IDungeon {
 
+	public enum WorldType { Cubic, Hybrid, Classic }
 
 	public static final int VERTICAL_SPACING = 10;
 	public static final int TOPLEVEL = 50;
@@ -55,9 +56,10 @@ public class Dungeon implements IDungeon{
 	@Nonnull
 	private World world;
 
+	private WorldType worldType;
 	private boolean isCubicWorld;
 
-	private static boolean isSpawnedOnce, isGenerating;
+	// public static boolean isSpawnedOnce, isGenerating;
 	
 	static{
 		try{
@@ -107,24 +109,38 @@ public class Dungeon implements IDungeon{
 		this.levels = new ArrayList<IDungeonLevel>();
 	}
 
-	private void checkForCubicWorld() {
+	private void checkForCubicWorld(boolean isCubicGen) {
 		try {
 			ICubicWorld cubicWorld = (ICubicWorld)world;
 			isCubicWorld = cubicWorld != null;
 		} catch(Exception ex) {
 			isCubicWorld = false;
 		}
+
+		if(isCubicWorld && !isCubicGen)
+			worldType = WorldType.Hybrid;
+		else if(isCubicWorld)
+			worldType = WorldType.Cubic;
+		else worldType = WorldType.Classic;
 	}
 	
 	public boolean generateNear(Random rand, int x, int y, int z){
 		if(Dungeon.settingsResolver == null) return false;
 		
-		int attempts = 50;
+		int attempts = worldType == WorldType.Cubic ? 16 : 50; // In a cubic world we only need to check for the cube height, and if this method returns true, that means that we reach the ground
 
+		Coord location = getNearbyCoord(rand, x, y, z, 40, 100);
+		//if(validLocation(rand, location)) return true; // Is valid location without trying all the attemps.
+		if(DungeonDebug.debug) System.out.println("["+worldType.toString().toUpperCase()+"] Starting attempt at "+location+"!");
 		for(int i = 0; i < attempts; i++){
-			Coord location = getNearbyCoord(rand, x, z, 40, 100);
-			if(isCubicWorld)
-				location.add(Cardinal.UP, y);
+			// Coord location = getNearbyCoord(rand, x, y, z, 40, 100);
+
+			if(worldType == WorldType.Cubic) {
+				// location.add(Cardinal.UP, y); // This doesn't work
+				location = new Coord(location.getX(), location.getY() + 1, location.getZ());
+			}
+
+			// System.out.println(location);
 			
 			if(!validLocation(rand, location)) continue;
 			
@@ -143,7 +159,7 @@ public class Dungeon implements IDungeon{
 			return true;
 		}
 
-		if(DungeonDebug.debug) System.out.println("Surpassed maximum ("+attempts+") attempts!");
+		if(DungeonDebug.debug) System.out.println("Surpassed maximum ("+attempts+") attempts finished at "+location+"!");
 		return false;
 	}
 	
@@ -155,6 +171,8 @@ public class Dungeon implements IDungeon{
 	public static boolean canSpawnInChunk(int chunkX, int chunkZ, IWorldEditor editor){
 		
 		if(!RogueConfig.getBoolean(RogueConfig.DONATURALSPAWN)) return false;
+
+		// System.out.println("Test chunk: ("+chunkX+", "+chunkZ+")");
 		
 		int dim = editor.getInfo(new Coord(chunkX * 16, 0, chunkZ * 16)).getDimension();
 		List<Integer> wl = new ArrayList<Integer>();
@@ -163,14 +181,17 @@ public class Dungeon implements IDungeon{
 		bl.addAll(RogueConfig.getIntList(RogueConfig.DIMENSIONBL));
 		if(!SpawnCriteria.isValidDimension(dim, wl, bl)) return false;
 
-		boolean spawn = !isSpawnedOnce && DungeonDebug.debug;
-		if(!isVillageChunk(editor, chunkX, chunkZ) && !spawn) return false;
+		// System.out.println("Valid dimension!");
+
+		// boolean spawn = !isSpawnedOnce && DungeonDebug.debug;
+		// && !spawn
+		if(!isVillageChunk(editor, chunkX, chunkZ)) return false;
 
 		//if(DungeonDebug.debug)
-		//	System.out.println("Found village chunk!");
+			// System.out.println("Found village chunk!");
 
-		// I added 5% to test it without travelling too much
-		double spawnChance = RogueConfig.getDouble(RogueConfig.SPAWNCHANCE); // * 0.05;
+		// If you want to make harder to the users that use this mod, then change the spawn chance probability...
+		double spawnChance = RogueConfig.getDouble(RogueConfig.SPAWNCHANCE);
 		Random rand = new Random(Objects.hash(chunkX, chunkZ, 31));
 
 		float f = rand.nextFloat();
@@ -205,31 +226,33 @@ public class Dungeon implements IDungeon{
 		return chunkX == m && chunkZ == n;
 	}
 	
-	public void spawnInChunk(World world, Random rand, int chunkX, int y, int chunkZ) {
+	public void spawnInChunk(World world, Random rand, int chunkX, int chunkY, int chunkZ, boolean isCubicGen) {
 		if(this.world == null) {
 			this.world = world;
-			checkForCubicWorld();
+			checkForCubicWorld(isCubicGen);
 		}
 
-		boolean isDebug = DungeonDebug.debug;
+		// boolean isDebug = DungeonDebug.debug;
 
-		// flag created to test
-		boolean canSpawnInDebugMode = isDebug && y >= 25;
-		if(Dungeon.canSpawnInChunk(chunkX, chunkZ, editor) && canSpawnInDebugMode){
+		// flag created to test: This was created because I need to generate over y=25*16 in T121
+		// boolean canSpawnInDebugMode = isDebug && y >= 25;
+		//  && canSpawnInDebugMode
+		if(Dungeon.canSpawnInChunk(chunkX, chunkZ, editor)){
 			int x = chunkX * 16 + 4;
 			int z = chunkZ * 16 + 4;
+			int y = chunkY * 16;
 
-			y = y * 16;
+			System.out.println("Found village position at ("+x+", "+y+", "+z+")!");
 
-			if(isGenerating)
-				return;
+			//if(isGenerating)
+			//	return;
 
-			if(isDebug) {
-				System.out.println("Attempting to generate dungeon at chunk ("+x+", "+z+"), y = "+y);
+			if(generateNear(rand, x, chunkY, z)) {
+				System.out.println("Attempting to generate dungeon at chunk ("+x+", "+z+"), y = "+chunkY);
 			}
 			
-			isGenerating = generateNear(rand, x, y, z);
-			isSpawnedOnce = isGenerating;
+			// isGenerating = ;
+			// isSpawnedOnce = isGenerating;
 		}
 	}
 	
@@ -264,8 +287,8 @@ public class Dungeon implements IDungeon{
 		}
 
 		int y = column.getY();
-		int upperLimit = isCubicWorld ? y + 16 : RogueConfig.getInt(RogueConfig.UPPERLIMIT);
-		int lowerLimit = isCubicWorld ? y : RogueConfig.getInt(RogueConfig.LOWERLIMIT);
+		int upperLimit = worldType == WorldType.Cubic ? y + 16 : RogueConfig.getInt(RogueConfig.UPPERLIMIT);
+		int lowerLimit = worldType == WorldType.Cubic ? y : RogueConfig.getInt(RogueConfig.LOWERLIMIT);
 
 		Coord cursor = new Coord(column.getX(), upperLimit, column.getZ());
 		
@@ -309,7 +332,7 @@ public class Dungeon implements IDungeon{
 		return true;
 	}
 	
-	public static Coord getNearbyCoord(Random rand, int x, int z, int min, int max){
+	public Coord getNearbyCoord(Random rand, int x, int y, int z, int min, int max){
 		
 		int distance = min + rand.nextInt(max - min);
 		
@@ -317,8 +340,9 @@ public class Dungeon implements IDungeon{
 		
 		int xOffset = (int) (Math.cos(angle) * distance);
 		int zOffset = (int) (Math.sin(angle) * distance);
-		
-		Coord nearby = new Coord(x + xOffset, 0, z + zOffset);
+
+		//                                                                        : (worldType == WorldType.Hybrid ? world.provider.getAverageGroundLevel() : 0)
+		Coord nearby = new Coord(x + xOffset, worldType == WorldType.Cubic ? y : 0, z + zOffset);
 		return nearby;
 	}
 	

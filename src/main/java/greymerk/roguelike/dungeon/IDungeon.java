@@ -12,7 +12,7 @@ public interface IDungeon {
 
 	public void generate(ISettings setting, Coord pos);
 	
-	public void spawnInChunk(World world, Random rand, int chunkX, int y, int chunkZ);
+	public void spawnInChunk(World world, Random rand, int chunkX, int y, int chunkZ, boolean isCubicGen);
 	
 	public Coord getPosition();
 	

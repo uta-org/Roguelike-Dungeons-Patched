@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 import greymerk.roguelike.DungeonDebug;
+import greymerk.roguelike.dungeon.Dungeon;
 import greymerk.roguelike.dungeon.DungeonTunnel;
 import greymerk.roguelike.dungeon.IDungeon;
 import greymerk.roguelike.dungeon.IDungeonLevel;
@@ -28,6 +29,8 @@ public class DungeonTaskTunnels implements IDungeonTask{
 				// ++steps;
 			}
 		}
+
+		// Dungeon.isGenerating = false; // Disable flag
 	}
 
 	private static int getSteps(List<IDungeonLevel> levels) {

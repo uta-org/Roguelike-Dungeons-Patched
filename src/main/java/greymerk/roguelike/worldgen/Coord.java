@@ -137,11 +137,12 @@ public class Coord{
 	
 	@Override
 	public String toString(){
-		String toReturn = "";
+		/*String toReturn = "";
 		toReturn += "x: " + x + " ";
 		toReturn += "y: " + y + " ";
 		toReturn += "z: " + z;
-		return toReturn;
+		return toReturn;*/
+		return "("+x+", "+y+", "+z+")";
 	}
 	
 	@Override
