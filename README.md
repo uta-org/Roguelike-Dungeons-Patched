@@ -16,6 +16,9 @@ build.
 
 ## Screenshots
 
+<details>
+ <summary><b> CLICK HERE TO OPEN THE SPOILER AND SEE THE SCREENSHOTS</b></summary>
+
 ![...](https://i.imgur.com/optrBMD.png)
 
 ![...](https://i.imgur.com/mp2RvbX.png)
@@ -35,5 +38,7 @@ build.
 ![...](https://i.imgur.com/uoPxMLy.png)
 
 ![...](https://i.imgur.com/WMc4WHi.png)
+
+</details>
 
 [On Imgur](https://imgur.com/gallery/aZAnT3u)
