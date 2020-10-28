@@ -1,5 +1,6 @@
 package greymerk.roguelike;
 
+import greymerk.roguelike.command.CommandLocateVillage;
 import greymerk.roguelike.command.CommandRoguelike;
 import io.github.opencubicchunks.cubicchunks.api.worldgen.CubeGeneratorsRegistry;
 import net.minecraft.command.ICommandManager;
@@ -52,6 +53,7 @@ public class Roguelike {
 		ICommandManager command = server.getCommandManager();
 		ServerCommandManager serverCommand = ((ServerCommandManager) command);
 		serverCommand.registerCommand(new CommandRoguelike());
+		serverCommand.registerCommand(new CommandLocateVillage());
 
 	}
 }

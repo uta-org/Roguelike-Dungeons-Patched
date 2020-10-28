@@ -1,6 +1,6 @@
 *.class
 *.iws
-/.idea
+# /.idea
 
 /.gradle/
 /.metadata/

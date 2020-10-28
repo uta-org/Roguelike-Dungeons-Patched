@@ -12,6 +12,7 @@ import java.util.Random;
 
 import javax.annotation.Nonnull;
 import greymerk.roguelike.DungeonDebug;
+import greymerk.roguelike.worldgen.*;
 import io.github.opencubicchunks.cubicchunks.api.world.ICubicWorld;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
@@ -27,10 +28,6 @@ import greymerk.roguelike.dungeon.settings.SettingsResolver;
 import greymerk.roguelike.dungeon.settings.SpawnCriteria;
 import greymerk.roguelike.dungeon.tasks.DungeonTaskRegistry;
 import greymerk.roguelike.treasure.ITreasureChest;
-import greymerk.roguelike.worldgen.Cardinal;
-import greymerk.roguelike.worldgen.Coord;
-import greymerk.roguelike.worldgen.IWorldEditor;
-import greymerk.roguelike.worldgen.VanillaStructure;
 import greymerk.roguelike.worldgen.shapes.RectSolid;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.biome.Biome;
@@ -49,17 +46,14 @@ public class Dungeon implements IDungeon {
 	
 	
 	private Coord origin;
-	private List<IDungeonLevel> levels;
+	private final List<IDungeonLevel> levels;
 
-	private IWorldEditor editor;
+	private final IWorldEditor editor;
 
 	@Nonnull
 	private World world;
 
 	private WorldType worldType;
-	private boolean isCubicWorld;
-
-	// public static boolean isSpawnedOnce, isGenerating;
 	
 	static{
 		try{
@@ -106,10 +100,11 @@ public class Dungeon implements IDungeon {
 	
 	public Dungeon(IWorldEditor editor){
 		this.editor = editor;
-		this.levels = new ArrayList<IDungeonLevel>();
+		this.levels = new ArrayList<>();
 	}
 
 	private void checkForCubicWorld(boolean isCubicGen) {
+		boolean isCubicWorld;
 		try {
 			ICubicWorld cubicWorld = (ICubicWorld)world;
 			isCubicWorld = cubicWorld != null;
@@ -130,19 +125,12 @@ public class Dungeon implements IDungeon {
 		int attempts = worldType == WorldType.Cubic ? 16 : 50; // In a cubic world we only need to check for the cube height, and if this method returns true, that means that we reach the ground
 
 		Coord location = getNearbyCoord(rand, x, y, z, 40, 100);
-		//if(validLocation(rand, location)) return true; // Is valid location without trying all the attemps.
 		if(DungeonDebug.debug) System.out.println("["+worldType.toString().toUpperCase()+"] Starting attempt at "+location+"!");
 		for(int i = 0; i < attempts; i++){
-			// Coord location = getNearbyCoord(rand, x, y, z, 40, 100);
-
-			if(worldType == WorldType.Cubic) {
-				// location.add(Cardinal.UP, y); // This doesn't work
-				location = new Coord(location.getX(), location.getY() + 1, location.getZ());
+			if(!validLocation(rand, location)) {
+				location = getNearbyCoord(rand, x, y, z, 40, 100);
+				continue;
 			}
-
-			// System.out.println(location);
-			
-			if(!validLocation(rand, location)) continue;
 			
 			ISettings setting;
 			
@@ -169,11 +157,8 @@ public class Dungeon implements IDungeon {
 	}
 	
 	public static boolean canSpawnInChunk(int chunkX, int chunkZ, IWorldEditor editor){
-		
 		if(!RogueConfig.getBoolean(RogueConfig.DONATURALSPAWN)) return false;
 
-		// System.out.println("Test chunk: ("+chunkX+", "+chunkZ+")");
-		
 		int dim = editor.getInfo(new Coord(chunkX * 16, 0, chunkZ * 16)).getDimension();
 		List<Integer> wl = new ArrayList<Integer>();
 		wl.addAll(RogueConfig.getIntList(RogueConfig.DIMENSIONWL));
@@ -181,27 +166,21 @@ public class Dungeon implements IDungeon {
 		bl.addAll(RogueConfig.getIntList(RogueConfig.DIMENSIONBL));
 		if(!SpawnCriteria.isValidDimension(dim, wl, bl)) return false;
 
-		// System.out.println("Valid dimension!");
-
-		// boolean spawn = !isSpawnedOnce && DungeonDebug.debug;
-		// && !spawn
 		if(!isVillageChunk(editor, chunkX, chunkZ)) return false;
-
-		//if(DungeonDebug.debug)
-			// System.out.println("Found village chunk!");
 
 		// If you want to make harder to the users that use this mod, then change the spawn chance probability...
 		double spawnChance = RogueConfig.getDouble(RogueConfig.SPAWNCHANCE);
 		Random rand = new Random(Objects.hash(chunkX, chunkZ, 31));
 
 		float f = rand.nextFloat();
-		// System.out.println(f);
-
 		return f < spawnChance;
 	}
 
-	// This approach doesn't conflicts with T121, so we can re-add it
-	public static boolean isVillageChunk(IWorldEditor editor, int chunkX, int chunkZ){
+	public static boolean isVillageChunk(World world, int chunkX, int chunkZ) {
+		return isVillageChunk(new WorldEditor(world), chunkX, chunkZ);
+	}
+
+	public static boolean isVillageChunk(IWorldEditor editor, int chunkX, int chunkZ) {
 		int frequency = RogueConfig.getInt(RogueConfig.SPAWNFREQUENCY);
 		int min = 8 * frequency / 10;
 		int max = 32 * frequency / 10;
@@ -232,27 +211,13 @@ public class Dungeon implements IDungeon {
 			checkForCubicWorld(isCubicGen);
 		}
 
-		// boolean isDebug = DungeonDebug.debug;
-
-		// flag created to test: This was created because I need to generate over y=25*16 in T121
-		// boolean canSpawnInDebugMode = isDebug && y >= 25;
-		//  && canSpawnInDebugMode
 		if(Dungeon.canSpawnInChunk(chunkX, chunkZ, editor)){
 			int x = chunkX * 16 + 4;
 			int z = chunkZ * 16 + 4;
 			int y = chunkY * 16;
 
-			System.out.println("Found village position at ("+x+", "+y+", "+z+")!");
-
-			//if(isGenerating)
-			//	return;
-
-			if(generateNear(rand, x, chunkY, z)) {
-				System.out.println("Attempting to generate dungeon at chunk ("+x+", "+z+"), y = "+chunkY);
-			}
-			
-			// isGenerating = ;
-			// isSpawnedOnce = isGenerating;
+			if(generateNear(rand, x, y, z))
+				System.out.println("Attempting to generate dungeon at chunk ("+x+", "+y+", "+z+")");
 		}
 	}
 	
@@ -341,9 +306,8 @@ public class Dungeon implements IDungeon {
 		int xOffset = (int) (Math.cos(angle) * distance);
 		int zOffset = (int) (Math.sin(angle) * distance);
 
-		//                                                                        : (worldType == WorldType.Hybrid ? world.provider.getAverageGroundLevel() : 0)
-		Coord nearby = new Coord(x + xOffset, worldType == WorldType.Cubic ? y : 0, z + zOffset);
-		return nearby;
+		//                                                                : (worldType == WorldType.Hybrid ? world.provider.getAverageGroundLevel() : 0)
+		return new Coord(x + xOffset, worldType == WorldType.Cubic ? y : 0, z + zOffset);
 	}
 	
 	public static Random getRandom(IWorldEditor editor, Coord pos){
